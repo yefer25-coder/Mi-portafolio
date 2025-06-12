@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-  }
+}
 
 body {
    font-family:'Times New Roman', Times, serif ;
-   background: rgb(226, 223, 223);
+   background: rgb(255, 255, 255);
    font-size: 1rem;
 }
-
 
 #header {
     background-color: rgb(231, 228, 228);
@@ -46,7 +45,6 @@ body {
    text-decoration: 0.3rem underline rgb(4, 214, 169);
 }
 
-
 main {
     background-color: white;
     max-width: 90vw;
@@ -55,83 +53,40 @@ main {
     margin-top: 6rem;    
 }
 
-.main-section {
+.proyectos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-.main-section__me {
-    display: flex;
-    width: 30rem;
-    height: auto;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
     margin: auto;
+    gap: 2rem;
+}
+
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 3rem;
-    box-shadow: 0 2px 6px rgba(2, 2, 2, 0.5);
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: 0.3s ease; 
 }
-
-
-.main-section__me:hover {
-    transition: 0.6s ease;
-    transform: scale(1.01);
+  
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
-
-
-.main-section__me h2 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-}
-
-
-.main-section__me p {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-}
-
-
-.main-section__button {
-    margin-top: 3rem;
-    padding: 0.5rem;
-    background-color: black;
-    align-self: flex-start;
-}
-
-
-.main-section__button a {
-    text-decoration: none;
-    color: white;
-}
-
-
-.main-section__button:hover {
-    transition: 0.8s ease;
-    background-color: rgb(109, 102, 102);
-}
-
-.my-photo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 40rem;
-}
-
-
-.my-photo img {
-    max-width: 100%;
+  
+.proyecto img {
+    padding: 2rem;
+    width: 100%;
     height: auto;
     display: block;
 }
 
-
-.img-fondo {
-    margin-top: 2rem;
-    height: 15rem;
-    background-image: url("./iconos/img_fondo2.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.proyectos a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -171,17 +126,4 @@ main {
     justify-content: space-around;
     margin-left: auto;
     margin-right: 30rem;
-}
-
-@media (max-width: 968px) {
-    #header {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-section {
-        grid-template-columns: 1fr;
-    }
 }

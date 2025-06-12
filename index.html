@@ -4,74 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/jpg" href="my_photho/img.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>My Portfolio</title>
 </head>
 <body>
-    <h1>Yeferson Alejandro Garcia Marin - Riwi Developer</h1>
-    <nav>
-        <a id="about_me" href="#about_me">About me</a>
-        <a id="project" href="#projects">Projects</a>
-        <a id="contact" href="#contact">Contact</a>
-    </nav>
-    <section class="about_me">
-        <h2>¡Who am I?!</h2>
-        <p>Hello, my name is <strong>Yeferson Garcia</strong>. I am from a municipality called Rionegro. 
-            At this moment I am studying development in the city of Medellin.
-            I am very passionate about learning new things, overcome challenges and improve constantly.
-        </p>
-        <img src="./my_photho/img.jpg" alt="Yefeson Garcia" width="200">
-    </section>
-    <ul>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
-    <section class="projects">
-        <h2>Projects</h2>
-        <h3>Project 1: Mi potafolio</h3>
-        <p>This is my first project using  <strong>HTML</strong>. Where I am creating a website for my portfolio.
-            My contact will be here. As well as links to new projects. And a constant improvement for my portfolio using HTML.
-        </p>
-        <h3>Project 2: Inventario</h3>
-        <p>This project aims to take inventory of a store. Was made in <strong>Python</strong>
-            and contain everything necessary to achieve its objective.</p>
+    <header id="header">
+        <div class="header-name">
+            <h1 class="header-name__h1">YG - Riwi Developer</h1>
+        </div>
+        <nav class="navegacion">
+            <a class="navegacion-a a" href="./index.html">Inicio</a>
+            <a class="navegacion-a a" href="./proyectos.html">Proyectos</a>
+            <a class="navegacion-a a" href="#">Sobre mi</a>
+            <a class="navegacion-a a" href="#">Contacto</a>
+        </nav>
+    </header>
 
-        <table>
-            <tr>
-                <th>Project name</th>
-                <th>Technologies used</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>Portfolio website</td>
-                <td>HTML</td>
-                <td><a href="#">View project</a></td>
-            </tr>
-            <tr>
-                <td>Inventory</td>
-                <td>Python</td>
-                <td><a href="#">View project</a></td>
-            </tr>
-        </table>
-    </section>
-    <section class="contact">
-        <form action="/send" method="post">
-            <label for="name">Name:</label>
-            <input type="email" id="email" name="email" required>
+    <main>
+        <section class="main-section">
+            <article class="main-section__me">
 
-            <label for="email">Email:</label>
-            <input type="text" id="name" name="name" required>
+                <h2>¡Quien soy!</h2>
+                <p>Hola, mi nombre es <strong>Yeferson Garcia.</strong>Soy de un municipio llamado Rionegro, tengo 23 años y actualmente estudio desarrollo
+                 en Riwi. Me apasiona conocer sobre las nuevas tecnologias y aprender de ella para implementarla. Llevo poco tiempo estudiando desarrollo; 
+                 pero realmente es un espacio donde quiero estar.
+                </p>
 
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" rows="4" required></textarea>
+                <button class="main-section__button">
+                    <a href="">Mas sobre mi</a>
+                </button>
 
-            <input type="submit" value="send">
-        </form>
-    </section>
-    <div>
-        <a href="github">GitHub</a>
-    </div>
+            </article>
+            
+            <figure class="my-photo">
+                <img src="./my_photho/img_foto.jpg" alt="Foto de Yeferson Garcia">
+                <img src="./my_photho/img_foto.jpg" alt="Foto de Yeferson Garcia">
+            </figure>
+        </section>
+
+       <div class="img-fondo"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_name">
+            <h1 class="footer-name__h1">YG - Riwi Developer</h1>
+        </div>
+        <nav class="footer-nav">
+            <a class="footer-nav__a" href="https://wa.me/573128812662" target="_blank" ><img src="./iconos/whatsapp.jpg" alt="Whatsapp"></a>
+            <a class="footer-nav__a" href="https://www.facebook.com/share/1B8aefMJwB/" target="_blank"><img src="./iconos/facebook.jpg" alt="Facebook"></a>
+        </nav>
+    </footer>
 
 </body>
 </html>
+
